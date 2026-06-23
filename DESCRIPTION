@@ -1,0 +1,38 @@
+Package: rendezr
+Type: Package
+Title: Consent-First Random Local Network Conversations for R
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Quentin", family = "Lamboley",
+           email = "q.lamboley78@gmail.com", role = c("aut", "cre"))
+    )
+Description: A local-area-network, consent-first, peer-to-peer console chat
+    for R and RStudio. Each participant explicitly starts a short-lived local
+    listener; the package discovers only opted-in peers on the configured private
+    IPv4 subnet, selects an available peer at random, and sends messages directly
+    between the two local machines. There is no central service, no account, no
+    domain, no telemetry, and no network activity at package load time.
+License: MIT + file LICENSE
+URL: https://github.com/QuentinLamboley/rendezr
+BugReports: https://github.com/QuentinLamboley/rendezr/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    cli (>= 3.6.0),
+    curl (>= 5.0.0),
+    digest,
+    fs,
+    httpuv (>= 1.6.0),
+    jsonlite,
+    later,
+    rappdirs,
+    uuid
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+Language: en-US

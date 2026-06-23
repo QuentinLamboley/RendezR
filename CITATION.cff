@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use RendezR LAN, please cite it as below."
+title: "RendezR LAN: consent-first random local-network conversations for R"
+version: 0.2.0
+date-released: 2026-06-24
+authors:
+  - family-names: Lamboley
+    given-names: Quentin
+    email: q.lamboley78@gmail.com
+license: MIT
+repository-code: "https://github.com/QuentinLamboley/rendezr"
